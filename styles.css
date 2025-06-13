@@ -165,6 +165,7 @@ body {
   text-align: center;
   padding: 1rem;
   border-top: 1px solid #ccc;
+  margin-top: 120px; /* Add space above the footer */
 }
 
 .footer h2 {
@@ -176,12 +177,46 @@ body {
   margin-top: 0.5rem;
 }
 
+/* Gradually shrink the charity: water logo as the screen gets smaller */
+.footer img {
+  width: 180px;    /* Default logo size */
+  height: auto;
+  display: block;
+  margin-left: 0;
+  transition: width 0.3s; /* Smooth size change */
+}
+
+/* Shrink a little on medium screens */
+@media (max-width: 900px) {
+  .footer img {
+    width: 150px;
+  }
+}
+
+/* Shrink more on small screens */
+@media (max-width: 700px) {
+  .footer img {
+    width: 120px;
+  }
+}
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 700px) {
   .hero-image {
     max-height: 220px;
     /* Move the image to the left by 40px */
     position: relative;      /* Needed to use left property */
-    left: -100px;             /* Push image off screen to the left */
+    left: -100px;            /* Push image off screen to the left */
+  }
+
+  /* 
+    Make the charity: water logo smaller on small screens.
+    This keeps it from taking up too much space.
+  */
+  .footer img {
+    width: 120px;    /* Shrink the logo */
+    height: auto;    /* Keep the aspect ratio */
+    display: block;  /* Make sure it stays on its own line */
+    margin-left: 0;  /* Keep it at the left side */
   }
 }
