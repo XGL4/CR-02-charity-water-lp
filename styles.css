@@ -137,6 +137,27 @@ body {
   cursor: pointer;
   font-size: 1rem;
   margin-top: 0.5rem;
+  /* Add a soft shadow under the button */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+/* 
+  Make the yellow buttons change color when hovered.
+  This helps users see which button they are about to click.
+*/
+.btn-yellow:hover {
+  /* Use a darker yellow for the hover effect */
+  background-color: #e6b800;
+}
+
+/* 
+  When the button is being clicked (active), make it even darker and remove the shadow.
+*/
+.btn-yellow:active {
+  background-color: #b38f00;
+  /* Remove the shadow when the button is clicked */
+  box-shadow: none;
 }
 
 .footer {
