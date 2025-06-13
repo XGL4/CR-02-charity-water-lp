@@ -57,33 +57,76 @@ body {
   text-align: center;
 }
 
+/* Make the content card a circle with layered backgrounds */
+
+/* This is the largest, light blue circle behind everything */
+.content-bg-lightblue {
+  background-color: #8BD1CB; /* Light Blue */
+  border-radius: 50%;
+  width: 400px;   /* Large size */
+  height: 400px;  /* Large size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 2rem auto 0 auto;  /* Center horizontally */
+}
+
+/* This is the middle, white circle */
+.content-bg-white {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 320px;   /* Medium size */
+  height: 320px;  /* Medium size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center inside parent */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Make the blue content card bigger so all the words fit inside */
 .bubble {
-  background-color: #0c3f79;
+  background-color: #0c3f79; /* Blue */
   color: white;
-  padding: 2rem;
-  border-radius: 30px;
-  margin-bottom: 1rem;
-  max-width: 90%;
+  border-radius: 50%;
+  width: 260px;   /* Large enough for text */
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center inside parent */
+  padding: 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .bubble h1 {
-  margin: 0 0 1rem 0;
-  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
 }
 
 .bubble p {
   font-size: 1rem;
+  margin: 0 0 0.5rem 0;
 }
 
 .btn-yellow {
   background-color: #fecd2f;
   color: black;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   font-size: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .footer {
