@@ -25,8 +25,8 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  /* Use Proxima Nova as the main font, with Arial and sans-serif as backups */
-  font-family: 'Proxima Nova', Arial, sans-serif;
+  /* Use Proxima Nova as the main font */
+  font-family: Proxima Nova, Avenir, Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f6f6f6;
@@ -60,7 +60,7 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Allows clicks to pass through */
+  pointer-events: none; /* Let clicks go through */
 }
 
 /* The largest, light blue circle */
@@ -115,6 +115,7 @@ body {
   padding: 1.5rem;
   box-sizing: border-box;
   text-align: center;
+  pointer-events: auto; /* Only the card can be clicked */
   /* Remove transition for width and height */
 }
 
@@ -143,29 +144,25 @@ body {
 }
 
 /* 
-  Make the yellow buttons change color when hovered.
+  Make the yellow buttons change color when hovered and clicked.
   This helps users see which button they are about to click.
 */
 .btn-yellow:hover {
-  /* Use a darker yellow for the hover effect */
-  background-color: #e6b800;
+  background-color: #e6b800; /* Darker yellow on hover */
 }
 
-/* 
-  When the button is being clicked (active), make it even darker and remove the shadow.
-*/
 .btn-yellow:active {
-  background-color: #b38f00;
-  /* Remove the shadow when the button is clicked */
-  box-shadow: none;
+  background-color: #b38f00; /* Even darker when clicked */
+  box-shadow: none;          /* Remove shadow when clicked */
 }
 
+/* Footer styles */
 .footer {
   background-color: white;
   text-align: center;
   padding: 1rem;
   border-top: 1px solid #ccc;
-  margin-top: 120px; /* Add space above the footer */
+  margin-top: 120px; /* Space above the footer */
 }
 
 .footer h2 {
