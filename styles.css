@@ -149,6 +149,7 @@ body {
 */
 .btn-yellow:hover {
   background-color: #e6b800; /* Darker yellow on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18); /* Slightly bigger shadow on hover */
 }
 
 .btn-yellow:active {
