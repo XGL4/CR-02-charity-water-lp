@@ -218,3 +218,43 @@ body {
     margin-left: 0;  /* Keep it at the left side */
   }
 }
+
+/* 
+  Water Crisis Card
+  This card explains the global water crisis.
+  It always stays under the Donate Now button in the footer.
+*/
+.water-crisis-card {
+  background-color: #eaf7fa; /* Light blue background */
+  border: 1px solid #8BD1CB; /* Border using brand color */
+  border-radius: 16px;       /* Rounded corners */
+  padding: 1rem;
+  margin-top: 1rem;          /* Space above the card */
+  max-width: 400px;          /* Limit the width */
+  margin-left: auto;         /* Center the card horizontally */
+  margin-right: auto;
+  text-align: left;          /* Align text to the left for readability */
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.08); /* Soft blue shadow */
+}
+
+.water-crisis-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #2E9DF7; /* Brand blue for the heading */
+  font-size: 1.1rem;
+}
+
+.water-crisis-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Make sure the card looks good on small screens */
+@media (max-width: 700px) {
+  .water-crisis-card {
+    max-width: 95%;
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+}
