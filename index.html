@@ -24,7 +24,8 @@
           <div class="bubble">
             <h1>Small Gift. Big Ripple.</h1>
             <p>In just a few clicks, you bring hope, health, and opportunity to communities in need.</p>
-            <button class="btn-yellow">Learn More</button>
+            <!-- The Learn More button now scrolls to the story section -->
+            <button class="btn-yellow" id="learn-more-btn">Learn More</button>
           </div>
         </div>
       </div>
@@ -45,7 +46,31 @@
           Nearly 1 in 10 people worldwide lack access to clean water. Clean water means better health, more time for families, and new opportunities for communities. Your support can make a big difference and help change lives quickly and easily.
         </p>
       </div>
+      <!-- 
+        Story Section
+        This section is black and white, has a border but no fill color, and always stays below the water crisis card.
+      -->
+      <div class="story-section" id="story-section">
+        <!-- Placeholder image for the story -->
+        <img src="https://via.placeholder.com/120x120?text=Photo" alt="Story placeholder image" class="story-image" />
+        <!-- Story text placeholder -->
+        <div class="story-text">
+          <h3>Story Title</h3>
+          <p>
+            This is where a real story will go. Share how clean water changed someone's life.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- Add a simple script at the end of the body to handle the scroll -->
+  <script>
+    // When the Learn More button is clicked, scroll to the story section
+    document.getElementById('learn-more-btn').onclick = function() {
+      // Scroll to the story section smoothly
+      document.getElementById('story-section').scrollIntoView({ behavior: 'smooth' });
+    };
+  </script>
 </body>
 </html>

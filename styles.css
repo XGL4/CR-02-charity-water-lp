@@ -261,3 +261,62 @@ body {
     padding: 0.8rem;
   }
 }
+
+/* 
+  Story Section
+  This section now only has a straight black line at the top.
+  The height is increased to stretch the section down farther.
+*/
+.story-section {
+  border: none;                  /* Remove all borders */
+  border-top: 2px solid #000;    /* Add only a top black border */
+  background: none;              /* No fill color */
+  border-radius: 0;              /* No rounded corners */
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  max-width: 400px;
+  min-height: 320px;             /* Increased height for more space */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Placeholder image styles */
+.story-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 1rem;
+  border: 1px solid #000;      /* Black border for the image */
+  background: #fff;            /* White background for the image */
+}
+
+/* Story text styles */
+.story-text h3 {
+  margin: 0 0 0.5rem 0;
+  color: #000;                 /* Black heading */
+  font-size: 1.1rem;
+}
+
+.story-text p {
+  margin: 0;
+  color: #000;                 /* Black text */
+  font-size: 1rem;
+}
+
+/* Make sure the story section looks good on small screens */
+@media (max-width: 700px) {
+  .story-section {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 95%;
+    padding: 1rem;
+    min-height: 240px;           /* Increased height for small screens */
+  }
+  .story-image {
+    margin-right: 0;
+    margin-bottom: 0.8rem;
+  }
+}
