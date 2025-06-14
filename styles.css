@@ -223,31 +223,34 @@ body {
   Water Crisis Card
   This card explains the global water crisis.
   It always stays under the Donate Now button in the footer.
+  Now the background is a more transparent light blue and the text is black for easy reading.
 */
 .water-crisis-card {
-  background-color: #eaf7fa; /* Light blue background */
-  border: 1px solid #8BD1CB; /* Border using brand color */
-  border-radius: 16px;       /* Rounded corners */
+  background-color: rgba(139, 209, 203, 0.5);   /* Light blue with transparency */
+  border: 2px solid rgba(12, 63, 121, 0.5);      /* Deep blue border with transparency */
+  border-radius: 16px;         /* Rounded corners */
   padding: 1rem;
-  margin-top: 1rem;          /* Space above the card */
-  max-width: 400px;          /* Limit the width */
-  margin-left: auto;         /* Center the card horizontally */
+  margin-top: 1rem;            /* Space above the card */
+  max-width: 400px;            /* Limit the width */
+  margin-left: auto;           /* Center the card horizontally */
   margin-right: auto;
-  text-align: left;          /* Align text to the left for readability */
+  text-align: left;            /* Align text to the left for readability */
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.08); /* Soft blue shadow */
 }
 
+/* Heading uses black for contrast */
 .water-crisis-card h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  color: #2E9DF7; /* Brand blue for the heading */
+  color: #000; /* Black for the heading */
   font-size: 1.1rem;
 }
 
+/* Paragraph text is black for readability */
 .water-crisis-card p {
   margin: 0;
   font-size: 1rem;
-  color: #333;
+  color: #000; /* Black text for contrast */
 }
 
 /* Make sure the card looks good on small screens */
